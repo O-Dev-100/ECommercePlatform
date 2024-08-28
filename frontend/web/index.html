@@ -10,10 +10,11 @@
     <header>
     <nav>
     <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+  
     </ul>
     </nav>
     </header>
@@ -25,4 +26,39 @@
             </ul>
         </section>
         <section id="product-review">
-            <h2>Product Review</h
+        <h2>Product Review</h2>
+            <form id="review-form">
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="rating" min="1" max="5">
+                <br>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review"></textarea>
+                <br>
+                <input type="submit" value="Submit Review">
+            </form>
+            <div id="review-list">
+                <!-- reviews will be rendered here -->
+            </div>
+        </section>
+        <section id="payment">
+            <h2>Payment</h2>
+            <form id="payment-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number">
+                <br>
+                <label for="expiration-month">Expiration Month:</label>
+                <input type="number" id="expiration-month" name="expiration-month" min="1" max="12">
+                <br>
+                <label for="expiration-year">Expiration Year:</label>
+                <input type="number" id="expiration-year" name="expiration-year" min="2023" max="2030">
+                <br>
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" name="cvc">
+                <br>
+                <input type="submit" value="Pay">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
